@@ -1,4 +1,5 @@
 import ProductCard from "../ProductCard/ProductCard";
+import Cart from "../Cart/Cart"; 
 import Effect from "../Effect/Effect";
 import React from "react";
 import { useState, useEffect } from "react";
@@ -55,14 +56,18 @@ function Products() {
   
     return (
       <div>
-          <div><Effect /></div>
+          <div><Cart/></div>
             {
                 products.map(function (item, index) {
                   return (<ProductCard key={index}  product={item} />)
                 })
             }
         </div>
+
+      
     )
+
+    
 }
 export let a = 10;
 export let b = 20;

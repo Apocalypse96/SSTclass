@@ -1,8 +1,10 @@
-import './App.css';
+
 import { a, b } from './components/Products/Products';
 import Products from './components/Products/Products';
 import { useState } from 'react';
 import CartContext from './context/CartContext';
+
+import Cart from './components/Cart/Cart';
 function App() {
   // state variable
   // inc
